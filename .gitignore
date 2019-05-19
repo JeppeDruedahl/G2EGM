@@ -31,6 +31,11 @@
 *.out
 *.app
 
+# vscode
+.vscode
+
 # matlab
 .mat
 .mexw64
+.pdf
+.png
