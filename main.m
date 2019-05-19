@@ -16,9 +16,6 @@ EXTRA_FIG  = 1;
 cases      = {'nonsmooth','smooth'};
 methodlist = {'egm','vfi'};
 
-cases      = {'nonsmooth'};
-methodlist = {'egm'};
-
 %% run all
 
 for i = 1:numel(cases);
