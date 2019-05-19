@@ -14,7 +14,6 @@ if isdir(figfolder) == 0
     mkdir(figfolder)
 end
 
-MEX_GCC  = 1;
 LOAD_MAX = 1;
 LOAD_VFI = 0;
 LOAD_EGM = 0;
@@ -31,19 +30,6 @@ Nm_max          = 800;
 
 %% 1. maximum solution
 
-if MEX_GCC == 1
-    mex -setup:'C:\Program Files\MATLAB\R2016a\bin\win64\mexopts\mingw64_g++.xml'
-    mex cfuncs\mex_acon_grid.cpp CXXFLAGS="$CXXFLAGS -std=c++11 -O3 -march=native -ffast-math -fabi-version=0 -mavx2" C:\TDM-GCC-64\lib\gcc\x86_64-w64-mingw32\5.1.0\libgomp.a;
-    mex cfuncs\mex_E.cpp CXXFLAGS="$CXXFLAGS -std=c++11 -O3 -march=native -ffast-math -fabi-version=0 -mavx2" C:\TDM-GCC-64\lib\gcc\x86_64-w64-mingw32\5.1.0\libgomp.a;
-    mex cfuncs\mex_E_vec.cpp CXXFLAGS="$CXXFLAGS -std=c++11 -O3 -march=native -ffast-math -fabi-version=0 -mavx2" C:\TDM-GCC-64\lib\gcc\x86_64-w64-mingw32\5.1.0\libgomp.a;
-    mex cfuncs\mexUpperEnvelopeToCommon.cpp CXXFLAGS="$CXXFLAGS -std=c++11 -O3 -march=native -ffast-math -fabi-version=0 -mavx2" C:\TDM-GCC-64\lib\gcc\x86_64-w64-mingw32\5.1.0\libgomp.a;
-    mex cfuncs\mexVFI_NLopt.cpp CXXFLAGS="$CXXFLAGS -std=c++11 -O3 -march=native -ffast-math -fabi-version=0 -mavx2" cfuncs\libnlopt-0.lib C:\TDM-GCC-64\lib\gcc\x86_64-w64-mingw32\5.1.0\libgomp.a;
-else
-    mex cfuncs\mexVFI.cpp COMPFLAGS="/openmp $COMPFLAGS";
-    mex cfuncs\mex_E_vec.cpp COMPFLAGS="/openmp $COMPFLAGS";
-    mex cfuncs\mex_E.cpp COMPFLAGS="/openmp $COMPFLAGS";
-end
-
 true_v = cell(numel(cases));
 I      = cell(numel(cases));
 for icase = 1:numel(cases);
@@ -52,7 +38,7 @@ for icase = 1:numel(cases);
     par_max.Nm          = Nm_max;
     par_max.N_guess_vfi = N_guess_vfi_max;
     par_max.do_NLopt    = 0;
-    par_max.max_threads = 16;
+    par_max.max_threads = 36;
     par_max.print       = 1;
     
     name = cases{icase};

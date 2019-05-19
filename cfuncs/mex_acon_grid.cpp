@@ -1,5 +1,5 @@
 // version: 1.0.
-// @author: Jeppe Druedahl og Thomas Høgholm Jørgensen, 2016.
+// @author: Jeppe Druedahl og Thomas HÃ¸gholm JÃ¸rgensen, 2016.
 
 #include<cmath>
 #include"mex.h"
@@ -38,7 +38,7 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
     double phi_m        = (double)  mxGetScalar(mxGetField(prhs[iin],0,"phi_m"));
 
     // output
-    int dims[3];
+    size_t dims[3];
     dims[0]  = Nc_acon;
     dims[1]  = Nb_acon;
     dims[2]  = Nq_acon;

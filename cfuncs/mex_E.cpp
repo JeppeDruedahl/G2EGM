@@ -1,5 +1,5 @@
 // version: 1.0.
-// @author: Jeppe Druedahl og Thomas Høgholm Jørgensen, 2016.
+// @author: Jeppe Druedahl og Thomas HÃ¸gholm JÃ¸rgensen, 2016.
 
 #include<cmath>
 #include"mex.h"
@@ -91,7 +91,7 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
     int iout = 0; // first output
 
     // a. output
-    int* dims = new int[par->ndim];
+    size_t* dims = new size_t[par->ndim];
     dims[0]  = par->Na_pd;
     dims[1]  = par->Nb_pd;
     if(par->ndim == 3){
