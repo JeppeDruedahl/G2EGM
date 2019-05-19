@@ -14,7 +14,7 @@
 # Compiled Dynamic libraries
 *.so
 *.dylib
-*.dll
+#*.dll
 
 # Fortran module files
 *.mod
@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+# matlab
+.mat
+.mexw64
