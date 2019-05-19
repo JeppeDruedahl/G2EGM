@@ -35,7 +35,8 @@
 .vscode
 
 # matlab
-.mat
-.mexw64
-.pdf
-.png
+*.mat
+*.mexw64
+*.pdf
+*.png
+*.asv
