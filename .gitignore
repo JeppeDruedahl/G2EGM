@@ -40,3 +40,6 @@
 *.pdf
 *.png
 *.asv
+
+# vscode
+.vscode
