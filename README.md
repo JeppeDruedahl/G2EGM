@@ -15,7 +15,7 @@ https://visualstudio.microsoft.com/downloads/.
 * For **NLopt** see cfuncs\ReadMe\NLopt.txt
 * For **vectorclass** see cfuncs\ReadMe_vectorclass.txt.
 
-# FOLDER STRUCTURE 
+# Folder structure 
 
 All MATLAB files are in the main folder.
 
@@ -23,7 +23,7 @@ All MATLAB files are in the main folder.
 * The subfolder **\data** is used for storing solution data.
 * The subfolder **\figures** are used for storing printed figures.
 
-# MAIN 
+# Main
 
 * **fun.m**: contains various MATLAB functions.
 * **egmfun.m** contains MATLAB functions unique for EGM.
