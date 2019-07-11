@@ -1,6 +1,6 @@
 # G2EGM
 
-Code for [A General Endogenous Grid Method for Multi-Dimensional Models with Non-Convexities and Constraints](https://linkinghub.elsevier.com/retrieve/pii/S0165188916301920), [Druedahl](web.econ.ku.dk/druedahl) and [Jørgensen](http://www.tjeconomics.com/), 2017, *Journal of Economic Dynamics and Control*, 74.
+Code for [A General Endogenous Grid Method for Multi-Dimensional Models with Non-Convexities and Constraints](https://linkinghub.elsevier.com/retrieve/pii/S0165188916301920), [Druedahl](http://web.econ.ku.dk/druedahl) and [Jørgensen](http://www.tjeconomics.com/), 2017, *Journal of Economic Dynamics and Control*, 74.
 
 # ReadMe 
 
