@@ -2,6 +2,8 @@
 
 Code for [A General Endogenous Grid Method for Multi-Dimensional Models with Non-Convexities and Constraints](https://linkinghub.elsevier.com/retrieve/pii/S0165188916301920), [Druedahl](http://web.econ.ku.dk/druedahl) and [Jørgensen](http://www.tjeconomics.com/), 2017, *Journal of Economic Dynamics and Control*, 74.
 
+**Python-version:** See [ConsumptionSavingNotebooks](https://github.com/NumEconCopenhagen/ConsumptionSavingNotebooks).
+
 # ReadMe 
 
 *This version of the code differ from the one used in the paper due to changes in MATLABs MEX setup.*
